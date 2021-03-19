@@ -112,7 +112,7 @@ public class AddressHelper {
      * @param address 地址Base58 解码后的字节数组
      * @return 校验结果
      */
-    private static boolean addressValid(byte[] address) {
+    public static boolean addressValid(byte[] address) {
         if (address.length != Parameter.CommonConstant.ADDRESS_SIZE) {
             return false;
         }
